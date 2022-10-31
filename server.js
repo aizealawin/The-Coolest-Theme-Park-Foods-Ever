@@ -16,6 +16,7 @@ app.use('/api', routes)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
+// THIS IS ME SHOWING ITS NOT COMMENTED
 app.get('/*', (req, res) => {
   res.sendFile(`${__dirname}/client/build/index.html`)
 })
