@@ -1,5 +1,5 @@
-const { Schema } = require('mongoose')
 const mongoose = require('mongoose')
+const Schema = mongoose.Schema
 
 const foodSchema = new Schema(
   {
@@ -12,4 +12,4 @@ const foodSchema = new Schema(
   { timestamps: true }
 )
 
-module.exports = mongoose.model('foodSchema', foodSchema)
+module.exports = mongoose.model('Food', foodSchema)
