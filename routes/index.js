@@ -4,4 +4,6 @@ const controllers = require('../controllers')
 
 router.get('/', (req, res) => res.send('this is root!!!'))
 
+router.post('/newfood', controllers.postFood)
+
 module.exports = router
