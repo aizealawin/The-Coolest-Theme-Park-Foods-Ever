@@ -12,11 +12,18 @@ const FoodDetails = () => {
       const response = await axios.get(
         `http://localhost:3001/api/food/${foodId}`
       )
-      console.log(response)
+      setFoodDetails(response?.data.food)
     }
-  })
+    getFoodDetails()
+  }, [])
 
-  return <div>FoodDetails</div>
+  return (
+    <div>
+      <section className="image-container">
+        <img src={foodDetails?.image} />
+      </section>
+    </div>
+  )
 }
 
 export default FoodDetails
