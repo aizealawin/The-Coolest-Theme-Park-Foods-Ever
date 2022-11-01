@@ -3,6 +3,7 @@ import './App.css'
 import Home from './pages/Home'
 import Nav from './components/Nav'
 import MenuForm from './components/MenuForm'
+import FoodDetails from './pages/FoodDetails'
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/newfood" element={<MenuForm />} />
           <Route path="/" element={<Home />} />
+          <Route path="/food/:foodId" element={<FoodDetails />} />
         </Routes>
       </main>
     </div>

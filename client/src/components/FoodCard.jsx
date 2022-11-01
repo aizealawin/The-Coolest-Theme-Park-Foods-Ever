@@ -1,8 +1,15 @@
 import React from 'react'
 
-const FoodCard = () => {
+const FoodCard = ({name, image}) => {
   return (
-    <div>FoodCard</div>
+    <div>
+      <div className='food-image'>
+        <img className='rendered-image' src={image}/>
+      </div>
+      <div className='name-desc'>
+        <h3>{name}</h3>
+      </div>
+    </div>
   )
 }
 
