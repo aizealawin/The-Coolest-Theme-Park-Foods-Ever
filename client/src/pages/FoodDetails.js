@@ -15,7 +15,7 @@ const FoodDetails = () => {
       setFoodDetails(response?.data.food)
     }
     getFoodDetails()
-  }, [])
+  }, [foodId])
 
   return (
     <div>
