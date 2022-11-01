@@ -1,10 +1,12 @@
-import React from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react'
 
 const Home = () => {
-  return <div>Home</div>
+  return (
+    <div>
+      <h1> Home</h1>
+      <Link to="/newfood">create food card</Link>
+    </div>
+  )
 }
 
 export default Home
