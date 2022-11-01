@@ -3,7 +3,7 @@ require('dotenv').config()
 
 let dbURL =
   process.env.NODE_env === 'production'
-    ? process.env.MONGODB_URI
+    ? 'mongodb+srv://TCTPFE:123@tctpfe.6gop5pn.mongodb.net/?retryWrites=true&w=majority'
     : 'mongodb://127.0.0.1:27017/TCTPFE'
 
 mongoose
