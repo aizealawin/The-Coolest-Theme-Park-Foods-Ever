@@ -18,11 +18,13 @@ const Home = () => {
 
   return (
     <div>
-      {foodList.map((result) => (
-        <Link to={`/food/${result._id}`} key={result._id}>
-          <FoodCard name={result.name} image={result.image} />
-        </Link>
-      ))}
+      <div className="foodcards">
+        {foodList.map((result) => (
+          <Link to={`/food/${result._id}`} key={result._id}>
+            <FoodCard name={result.name} image={result.image} />
+          </Link>
+        ))}
+      </div>
       <Link to="/newfood">create food card</Link>
     </div>
   )

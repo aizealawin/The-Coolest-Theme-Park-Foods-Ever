@@ -1,3 +1,37 @@
 .App {
   text-align: center;
 }
+
+.nav {
+
+  background-color: dodgerblue;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+
+.foodcards{
+
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+margin: 25px 5px;
+flex: 0 0 33.33;
+}
+
+
+.foodcard {
+  
+
+  
+}
+
+
+.rendered-image {
+
+  height: 300px;
+  width: 300px;
+}
