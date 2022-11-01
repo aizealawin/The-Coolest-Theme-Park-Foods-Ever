@@ -1,6 +1,6 @@
 import React from 'react'
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, Link } from 'react-router-dom'
 import axios from 'axios'
 
 const FoodDetails = () => {
@@ -17,6 +17,14 @@ const FoodDetails = () => {
     getFoodDetails()
   }, [])
 
+  const deleteFood = async (foodId) => {
+    try {
+      await axios.delete(`http://localhost:3001/api/food/${foodId}`, foodId)
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
   return (
     <div>
       <section className="image-container">
@@ -31,6 +39,17 @@ const FoodDetails = () => {
             <br />
             Vendor Price: {foodDetails?.vendor_price}
           </p>
+          <div className="buttons">
+            <Link to="/">
+              <button
+                onClick={() => {
+                  deleteFood(foodId)
+                }}
+              >
+                Delete
+              </button>
+            </Link>
+          </div>
         </div>
       </section>
     </div>
