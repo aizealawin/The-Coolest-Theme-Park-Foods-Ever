@@ -22,6 +22,17 @@ const FoodDetails = () => {
       <section className="image-container">
         <img src={foodDetails?.image} />
       </section>
+      <section className="details">
+        <div>
+          <h3>{foodDetails?.name}</h3>
+          <p className="description">{foodDetails?.description}</p>
+          <p className="prices">
+            Retail Price: {foodDetails?.retail_price}
+            <br />
+            Vendor Price: {foodDetails?.vendor_price}
+          </p>
+        </div>
+      </section>
     </div>
   )
 }
