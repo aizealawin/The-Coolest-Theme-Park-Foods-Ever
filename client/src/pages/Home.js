@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import FoodCard from '../components/FoodCard'
+import axios from 'axios'
 
 const Home = () => {
   // const BASE_URL = '/api'
@@ -21,7 +22,7 @@ const Home = () => {
           <FoodCard name={result.name} image={result.image} />
         </Link>
       ))}
-<Link to="/newfood">create food card</Link>
+      <Link to="/newfood">create food card</Link>
     </div>
   )
 }
