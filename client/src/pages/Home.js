@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const getFoodList = async () => {
-      const response = await axios.get(`/api/food`)
+      const response = await axios.get(`http://localhost:3001/api/food`)
       setFoodList(response?.data.food)
     }
     getFoodList()
@@ -25,7 +25,9 @@ const Home = () => {
           </Link>
         ))}
       </div>
-      <Link to="/newfood">create food card</Link>
+      <Link to="/newfood">
+        <button>Add Menu Item</button>
+      </Link>
     </div>
   )
 }

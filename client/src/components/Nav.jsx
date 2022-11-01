@@ -7,7 +7,7 @@ const Nav = () => {
   return(
     <nav>
       <h1>The Coolest Theme Park Foods Ever!!!</h1>
-      <Link to = '/'>Home</Link>
+      <Link to = '/'><p>Home</p></Link>
     </nav>
   )
 }

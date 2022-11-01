@@ -1,13 +1,58 @@
+
+body {
+  background-color: #eac435;
+}
+
 .App {
   text-align: center;
+  color: #5bc0eb;
+  color: #eac435;
+  color: #345995;
+  color: #fb4d3d;
+  color: #ca1551; 
+  color: #345995;
+  background-color: #eac435;
 }
 
-.nav {
+nav {
 
-  background-color: dodgerblue;
+  background-color: #5bc0eb;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
 }
+
+a {
+  text-decoration: none;
+  color: #345995
+}
+
+button {
+  border: 2px solid;
+ background-color: #5bc0eb;
+ padding: 14px 28px;
+ font-size: 16px;
+ cursor: pointer;
+ border-color: #345995;
+ color: #345995;
+ font-weight: bold;
+ margin-bottom: 50px;
+ width: 1000px
+
+}
+
+button:hover {
+  background-color: #345995;
+  transition: 0.2s;
+  color: #5bc0eb;
+  border-color: #5bc0eb;
+  border: 2px solid;
+}
+
+
+
 
 
 
