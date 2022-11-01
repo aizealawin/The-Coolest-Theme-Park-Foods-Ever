@@ -1,5 +1,3 @@
-import React from 'react'
-import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import FoodCard from '../components/FoodCard'
@@ -23,6 +21,7 @@ const Home = () => {
           <FoodCard name={result.name} image={result.image} />
         </Link>
       ))}
+<Link to="/newfood">create food card</Link>
     </div>
   )
 }
