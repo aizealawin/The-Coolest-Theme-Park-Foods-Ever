@@ -10,7 +10,7 @@ const app = express()
 app.use(logger('dev'))
 app.use(express.json())
 app.use(cors())
-app.use(express.static(`${__dirname}`))
+app.use(express.static(`${__dirname}/client/build`))
 
 app.use('/api', routes)
 
