@@ -8,7 +8,9 @@ import FoodDetails from './pages/FoodDetails'
 function App() {
   return (
     <div className="App">
-      <header></header>
+      <header>
+        <Nav />
+      </header>
       <main>
         <Routes>
           <Route path="/newfood" element={<MenuForm />} />

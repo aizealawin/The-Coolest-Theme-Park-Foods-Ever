@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import FoodCard from '../components/FoodCard'
 import axios from 'axios'
+import Nav from '../components/Nav'
 
 const Home = () => {
   // const BASE_URL = '/api'
