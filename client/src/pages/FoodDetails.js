@@ -28,7 +28,7 @@ const FoodDetails = () => {
   return (
     <div className="food-details">
       <section className="image-container">
-        <img src={foodDetails?.image} />
+        <img className="rendered-image" src={foodDetails?.image} />
       </section>
       <section className="details">
         <div>
