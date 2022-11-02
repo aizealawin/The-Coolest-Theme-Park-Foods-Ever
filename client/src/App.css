@@ -12,6 +12,7 @@ body {
   color: #ca1551; 
   color: #345995;
   background-color: #eac435;
+  font-family:Sansita, sans-sarif;
 }
 
 nav {
@@ -22,6 +23,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0 15px;
+
 }
 
 a {
@@ -39,8 +41,8 @@ button {
  color: #345995;
  font-weight: bold;
  margin-bottom: 50px;
- width: 1000px
-
+ width: 1000px;
+ font-family:Sansita, sans-sarif;
 }
 
 button:hover {
@@ -49,8 +51,50 @@ button:hover {
   color: #5bc0eb;
   border-color: #5bc0eb;
   border: 2px solid;
+
 }
 
+form > button{
+  margin:auto;
+  margin-top: 30px;
+}
+
+.delete-button:hover{
+  color:#345995;
+  background-color: #fb4d3d
+}
+
+.delete-button{
+  font-size:30px
+}
+
+form{
+  display:flex;
+  flex-direction: column;
+  margin: 30px;
+  padding:20px;
+  text-align: left;
+}
+
+label, input {
+padding: 5px;
+width: 1000px;
+font-size: 30px;
+margin:auto
+}
+
+.food-details{
+  margin: auto;
+  padding: 50px;
+}
+
+.details{
+  font-size:30px;
+}
+
+img{
+  border-radius: 20px;
+}
 
 
 

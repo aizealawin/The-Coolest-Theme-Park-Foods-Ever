@@ -26,7 +26,7 @@ const FoodDetails = () => {
   }
 
   return (
-    <div>
+    <div className="food-details">
       <section className="image-container">
         <img src={foodDetails?.image} />
       </section>
@@ -42,6 +42,7 @@ const FoodDetails = () => {
           <div className="buttons">
             <Link to="/">
               <button
+                className="delete-button"
                 onClick={() => {
                   deleteFood(foodId)
                 }}
