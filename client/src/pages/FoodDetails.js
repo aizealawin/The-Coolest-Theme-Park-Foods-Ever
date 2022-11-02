@@ -9,9 +9,7 @@ const FoodDetails = () => {
   const [foodDetails, setFoodDetails] = useState(null)
   useEffect(() => {
     const getFoodDetails = async () => {
-      const response = await axios.get(
-        `http://localhost:3001/api/food/${foodId}`
-      )
+      const response = await axios.get(`/api/food/${foodId}`)
       setFoodDetails(response?.data.food)
     }
     getFoodDetails()
@@ -19,7 +17,7 @@ const FoodDetails = () => {
 
   const deleteFood = async (foodId) => {
     try {
-      await axios.delete(`http://localhost:3001/api/food/${foodId}`, foodId)
+      await axios.delete(`/api/food/${foodId}`, foodId)
     } catch (error) {
       console.log(error)
     }
@@ -28,7 +26,11 @@ const FoodDetails = () => {
   return (
     <div className="food-details">
       <section className="image-container">
-        <img className="rendered-image" src={foodDetails?.image} />
+        <img
+          className="rendered-image"
+          id="details-img"
+          src={foodDetails?.image}
+        />
       </section>
       <section className="details">
         <div>
